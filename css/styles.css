@@ -1,0 +1,123 @@
+/*Палитра цветов с объявление переменных
+#212121 - вторичный чвет 
+#757575 - цвет основного текста
+
+#000000 - цет в логотипе Studio
+#FFFFFF - белый
+#2196F3 - акцент - цвет выделения
+#F5F4FA - цвет фона
+#E5E5E5
+
+background: rgba(255, 255, 255, 0,6) - цвет почты и телефона в футере
+*/
+:root {
+  --primаry-text-color: #757575;
+  --secondary-text-color: #212121;
+  --accent-text-color: #2196f3;
+  --bc-color: #ffffff;
+  --bc-footer-color: #2f303a;
+  --logo-header-color: #000000;
+  --logo-footer-color: #ffffff;
+  --addres-color: rgba(255, 255, 255, 0, 6);
+}
+body {
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  background: var(--bc-color);
+  color: var(--primаry-text-color);
+}
+.list {
+  list-style: none;
+}
+
+/* Page header */
+/* Logo*/
+
+.logo {
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  line-height: 31px;
+  color: var(--accent-text-color);
+}
+.logo-header {
+  color: var(--logo-header-color);
+}
+.logo-footer {
+  color: var(--logo-footer-color);
+}
+
+/* Site-nav */
+
+.site-nav .link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--secondary-text-color);
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-text-color);
+}
+
+/* Contacts-nav */
+.contacts-nav .link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--primаry-text-color);
+}
+.contacts-nav .link:hover,
+.contacts-nav .link:focus {
+  color: var(--accent-text-color);
+}
+
+/* Main contents */
+/* Hero */
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  background-color: var(--bc-footer-color); /*добавил для видимости заголовка - после удалить*/
+  color: var(--bc-color);
+}
+
+/* Section */
+.section-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  color: var(--secondary-text-color);
+}
+/* Features */
+.main-features .title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--secondary-text-color);
+}
+/* Team */
+.main-team .title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--secondary-text-color);
+}
+.main-team .text {
+  font-size: 16px;
+  line-height: 19px;
+}
+/* Page footer */
+.footer {
+  background-color: var(--bc-footer-color);
+}
+.addres {
+}
+.foter-addres .link {
+  font-style: normal;
+  color: var(--bc-color);
+}
+.foter-addres .contact {
+  font-style: normal;
+  color: var(--addres-color);
+}
