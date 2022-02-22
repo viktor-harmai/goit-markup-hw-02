@@ -16,9 +16,9 @@ background: rgba(255, 255, 255, 0,6) - цвет почты и телефона �
   --primary-white-color: #ffffff;
   --secondary-white-color: rgba(255, 255, 255, 0, 6);
   --primary-black-color: #000000;
-  --primary-bc-color: #F5F4FA;
+  --primary-bc-color: #f5f4fa;
   --secondary-bc-color: #2f303a;
-  }
+}
 
 body {
   font-family: Roboto, sans-serif;
@@ -49,16 +49,6 @@ body {
   color: var(--primary-white-color);
 }
 
-/* Button */
-
-.button{
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 26px;
-  background-color: var(--primary-bc-color);
-  color: var(--title-text-color);
-}
-
 /* Site-nav */
 
 .site-nav .link {
@@ -68,10 +58,10 @@ body {
   color: var(--title-text-color);
 }
 .site-nav .link:hover,
-.site-nav .link:focus{
-  color: var(--accent-text-color);   
+.site-nav .link:focus {
+  color: var(--accent-text-color);
 }
-.site-nav .link.current{
+.site-nav .link.current {
   color: var(--accent-text-color);
 }
 
@@ -96,11 +86,11 @@ body {
   font-weight: 900;
   font-size: 44px;
   line-height: 60px;
-  background-color: var(--secondary-bc-color); /* добавил для видимости заголовка - после удалить */ 
+  background-color: var(--secondary-bc-color); /* добавил для видимости заголовка - после удалить */
   color: var(--primary-white-color);
 }
 
-.button-hero{
+.button-hero {
   font-weight: bold;
   font-size: 16px;
   line-height: 30px;
@@ -118,7 +108,7 @@ body {
 
 /* Features */
 
-.main-features .title {
+.features .title {
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;
@@ -127,18 +117,49 @@ body {
 
 /* Team */
 
-.team-section{
-   background-color: var(--primary-bc-color);
+.team-section {
+  background-color: var(--primary-bc-color);
 }
-.main-team .title {
+.team .title {
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
   color: var(--title-text-color);
 }
-.main-team .text {
+.team .text {
   font-size: 16px;
   line-height: 19px;
+}
+
+/* Portfolio */
+
+/* Список - Filter*/
+
+.bt {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  background-color: var(--primary-bc-color);
+  color: var(--title-text-color);
+}
+
+.bt:hover,
+.bt:focus {
+  background-color: var(--accent-text-color);
+  color: var(--primary-white-color);
+}
+
+/* Список Works */
+
+.works .title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 36px;
+  color: var(--title-text-color);
+}
+.works .text {
+  font-size: 16px;
+  line-height: 30px;
 }
 
 /* Page footer */
@@ -151,9 +172,9 @@ body {
 }
 
 .footer-address .link {
- color: var(--primary-white-color);
+  color: var(--primary-white-color);
 }
 
 .footer-address .contact {
- color: var(--secondary-white-color);
+  color: var(--secondary-white-color);
 }
