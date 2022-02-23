@@ -1,18 +1,8 @@
-/* палитра цветов с объявление переменных
-#212121 - вторичный чвет 
-#757575 - цвет основного текста
-#000000 - цет в логотипе Studio
-#FFFFFF - белый
-#2196F3 - акцент - цвет выделения
-#F5F4FA - цвет фона
-#E5E5E5
-background: rgba(255, 255, 255, 0,6) - цвет почты и телефона в футере
-*/
-
 :root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
-  --accent-text-color: #2196f3;
+  --accent-primary-text-color: #2196f3;
+  --accent-secondary-text-color: #188ce8;
   --primary-white-color: #ffffff;
   --secondary-white-color: rgba(255, 255, 255, 0, 6);
   --primary-black-color: #000000;
@@ -21,9 +11,10 @@ background: rgba(255, 255, 255, 0,6) - цвет почты и телефона �
 }
 
 body {
-  font-family: Roboto, sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
   background: var(--primary-white-color);
   color: var(--primary-text-color);
 }
@@ -31,51 +22,47 @@ body {
 .list {
   list-style: none;
 }
+.link {
+  text-decoration: none;
+}
 
 /* Page header */
 
 /* Logo */
 
 .logo {
-  font-family: Raleway, sans-serif;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
-  color: var(--accent-text-color);
+  line-height: 1.19;
+  color: var(--accent-primary-text-color);
 }
-.logo-header {
+.header-logo {
   color: var(--primary-black-color);
 }
-.logo-footer {
-  color: var(--primary-white-color);
-}
 
-/* Site-nav */
+/* Header-nav */
 
-.site-nav .link {
+.header-list {
   font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
+  letter-spacing: 0.02em;
+}
+.header-link {
   color: var(--title-text-color);
 }
-.site-nav .link:hover,
-.site-nav .link:focus {
-  color: var(--accent-text-color);
+
+.header-list .link:hover,
+.header-list .link:focus {
+  color: var(--accent-primary-text-color);
 }
-.site-nav .link.current {
-  color: var(--accent-text-color);
+.header-link.link.current {
+  color: var(--accent-primary-text-color);
 }
 
-/* Contacts-nav */
+/* Heder-Contacts */
 
-.contacts-nav .link {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
+.header-contacts {
   color: var(--primary-text-color);
-}
-.contacts-nav .link:hover,
-.contacts-nav .link:focus {
-  color: var(--accent-text-color);
 }
 
 /* Main contents */
@@ -85,18 +72,27 @@ body {
 .hero-title {
   font-weight: 900;
   font-size: 44px;
-  line-height: 60px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
   background-color: var(--secondary-bc-color); /* добавил для видимости заголовка - после удалить */
   color: var(--primary-white-color);
 }
 
-.button-hero {
+.bt-hero {
   font-family: Roboto, sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
-  line-height: 30px;
-  background-color: var(--accent-text-color);
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  background-color: var(--accent-primary-text-color);
   color: var(--primary-white-color);
+}
+.bt-hero:hover,
+.bt-hero:focus {
+  background-color: var(--accent-secondary-text-color);
 }
 
 /* Section */
@@ -147,7 +143,7 @@ body {
 
 .bt:hover,
 .bt:focus {
-  background-color: var(--accent-text-color);
+  background-color: var(--accent-primary-text-color);
   color: var(--primary-white-color);
 }
 
@@ -166,17 +162,25 @@ body {
 
 /* Page footer */
 
-.footer {
+.footer-page {
   background-color: var(--secondary-bc-color);
 }
-.contacts {
-  font-style: normal;
-}
-
-.footer-address .link {
+/* Footer logo */
+.footer-logo {
   color: var(--primary-white-color);
 }
+.footer-address {
+  font-style: normal;
+  line-height: 1.71;
+}
 
-.footer-address .contact {
+.footer-link {
+  color: var(--primary-white-color);
+}
+.footer-contacts {
   color: var(--secondary-white-color);
+}
+.footer-list .link:hover,
+.footer-list .link:focus {
+  color: var(--accent-primary-text-color);
 }
