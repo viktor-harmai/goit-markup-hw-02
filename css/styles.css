@@ -97,19 +97,21 @@ body {
 
 /* Section */
 .section-title {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.17;
   color: var(--title-text-color);
 }
 
 /* Features */
 
 .features .title {
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 16px;
+  font-weight: 700;
   color: var(--title-text-color);
+}
+
+.features .text {
+  line-height: 1.71;
 }
 
 /* Team */
@@ -120,12 +122,12 @@ body {
 .team .title {
   font-weight: 500;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.19;
   color: var(--title-text-color);
 }
 .team .text {
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.19;
 }
 
 /* Portfolio */
@@ -136,7 +138,8 @@ body {
   font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 16px;
-  line-height: 26px;
+  line-height: 1.63;
+  cursor: pointer;
   background-color: var(--primary-bc-color);
   color: var(--title-text-color);
 }
@@ -150,14 +153,14 @@ body {
 /* Список Works */
 
 .works .title {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
-  line-height: 36px;
+  line-height: 2;
   color: var(--title-text-color);
 }
 .works .text {
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.89;
 }
 
 /* Page footer */
