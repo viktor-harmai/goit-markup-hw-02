@@ -35,6 +35,7 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+  letter-spacing: 0.03em;
   color: var(--accent-primary-text-color);
 }
 .header-logo {
@@ -51,10 +52,16 @@ body {
   color: var(--title-text-color);
 }
 
-.header-list .link:hover,
-.header-list .link:focus {
+.header-link:hover,
+.header-link:focus {
   color: var(--accent-primary-text-color);
 }
+
+.header-contacts:hover,
+.header-contacts:focus {
+  color: var(--accent-primary-text-color);
+}
+
 .header-link.link.current {
   color: var(--accent-primary-text-color);
 }
@@ -66,6 +73,15 @@ body {
 }
 
 /* Main contents */
+
+/* Section */
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
 
 /* Hero */
 
@@ -80,7 +96,7 @@ body {
   color: var(--primary-white-color);
 }
 
-.bt-hero {
+.btn-hero {
   font-family: Roboto, sans-serif;
   font-weight: 700;
   font-size: 16px;
@@ -90,27 +106,23 @@ body {
   background-color: var(--accent-primary-text-color);
   color: var(--primary-white-color);
 }
-.bt-hero:hover,
-.bt-hero:focus {
+.btn-hero:hover,
+.btn-hero:focus {
   background-color: var(--accent-secondary-text-color);
-}
-
-/* Section */
-.section-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  color: var(--title-text-color);
 }
 
 /* Features */
 
-.features .title {
+.features-title {
   font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
   color: var(--title-text-color);
 }
 
-.features .text {
+.features-text {
   line-height: 1.71;
 }
 
@@ -119,48 +131,53 @@ body {
 .team-section {
   background-color: var(--primary-bc-color);
 }
-.team .title {
+.team-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
+  letter-spacing: 0.03em;
   color: var(--title-text-color);
 }
-.team .text {
+.team-text {
   font-size: 16px;
   line-height: 1.19;
+  letter-spacing: 0.03em;
 }
 
 /* Portfolio */
 
 /* Список - Filter*/
 
-.bt {
+.btn {
   font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
+  letter-spacing: 0.03em;
   cursor: pointer;
   background-color: var(--primary-bc-color);
   color: var(--title-text-color);
 }
 
-.bt:hover,
-.bt:focus {
+.btn:hover,
+.btn:focus {
   background-color: var(--accent-primary-text-color);
   color: var(--primary-white-color);
 }
 
 /* Список Works */
 
-.works .title {
+.work-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
+  letter-spacing: 0.06em;
   color: var(--title-text-color);
 }
-.works .text {
+.work-text {
   font-size: 16px;
   line-height: 1.89;
+  letter-spacing: 0.03em;
 }
 
 /* Page footer */
@@ -183,7 +200,13 @@ body {
 .footer-contacts {
   color: var(--secondary-white-color);
 }
-.footer-list .link:hover,
-.footer-list .link:focus {
+
+.footer-link:hover,
+.footer-link:focus {
+  color: var(--accent-primary-text-color);
+}
+
+.footer-contacts:hover,
+.footer-contacts:focus {
   color: var(--accent-primary-text-color);
 }
